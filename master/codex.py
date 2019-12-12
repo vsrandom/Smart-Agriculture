@@ -1,0 +1,24 @@
+import os
+import time
+from datetime import datetime
+import subprocess
+import sys
+sys.stdout = open('/home/pi/log_files/codex.txt','a')
+print(datetime.now())
+
+path1='/home/pi/master/rasp1/idata/'
+path2='/home/pi/master/rasp2/idata/'
+path3='/home/pi/master/rasp3/idata/'
+
+
+def checkfiles(path1,path2,path3):
+	if len(os.listdir(path1)) >0 or len(os.listdir(path2)) or len(os.listdir(path3)):
+		print(datetime.now())
+		print('Files found')
+		time.sleep(10)
+		subprocess.Popen("{cmd}".format(cmd="python /home/pi/code1.py"), shell=True, stdout=subprocess.PIPE,stderr=subprocess.PIPE).communicate()
+
+while True:
+	checkfiles(path1,path2,path3)
+	time.sleep(300)
+
