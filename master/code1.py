@@ -3,8 +3,13 @@ import time
 import sys
 from datetime import datetime
 argv = sys.argv[1:]
-sys.stdout=open('/home/pi/log_files/code1.txt','a')
+sys.stdout=open('/home/pi/log_files/code1.txt','a')    #creating log files with time
 print(datetime.now())
+
+#fun() runs the camera.py
+#fux() send the data to the main master
+#remfile() removes the data from the folder
+
 
 def fun():
 	#subprocess.Popen("ssh {user}@{host} {cmd}".format(user="pi",host="192.168.43.112",cmd="scp rasp1/idata/*.png pi@192.168.43.113:master/rasp1/idata"), shell=True, stdout=subprocess.PIPE).communicate()
