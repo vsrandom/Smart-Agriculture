@@ -17,28 +17,28 @@
 	remfile() - removes files from respective directories after sending the files to parents. “codex.py” in local master /home/pi directory basically runs in background and checks weather there is any file in /home/master/raspx/idata/ folders where raspx = rasp1 , rasp3 in every 5 minutes. 
 	
 	4.IP’s of all the raspberry pi’s :
-	Local master 	:
+	Local master 		:
 	Hip 			- 	192.168.43.112 
 	Ethip 			-	169.254.51.217
 	Tpip (wlan0)  		-	192.168.1.102		(static ip)
 
-	Main Master 	:
+	Main Master 		:
 	Hip			-	192.168.43.231
 	TpIp			-	192.168.1.110		(static ip)   
 	USBIP(JioFi)		-	192.168.225.56		(static ip)
 
-	Slave1		:
+	Slave1			:
 	Hip			-	192.168.43.169
 	EthIP			-	169.254.105.228
 	TpIP			-	192.168.1.105		(static ip)
 
-	Slave3		:
+	Slave3			:
 	Hip			-	192.168.43.212
 	Ethip			-	169.254.101.168
 	TpIP			-	192.168.1.106		(static ip)
 	
-	RouterIp	:
-	JioFiIP		- 	192.168.225.201
+	RouterIp		:
+	JioFiIP			- 	192.168.225.201
 				
 
 
