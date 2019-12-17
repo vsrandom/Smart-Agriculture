@@ -1,0 +1,13 @@
+{
+	"User": "pi",
+	"LocalMIP": "192.168.1.173",
+	"ImageDestination": "master0/rasp1/idata",
+	"Image_Capture_Interval": 300,
+	"Image_Path": "/home/pi/rasp1/idata/",
+	"Camera_Log_File": "/home/pi/log_files/camera.txt",
+	"Code1_Log_File": "/home/pi/log_files/code1.txt",
+	"Codex_Log_File":"/home/pi/log_files/codex.txt",
+	"removeFiles": false,
+	"runCamera": true,
+	"SendFiles": true
+}
