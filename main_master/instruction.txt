@@ -4,7 +4,7 @@ and write below command
 
 @reboot(sleep 90; python /home/pi/codex.py)
 
-sudo mount /dev/sda1 /mnt/sda1/
+
 For unmount usb
 
 sudo umount /dev/sda1
