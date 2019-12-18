@@ -10,7 +10,7 @@ For unmount usb
 sudo umount /dev/sda1
 
 For passwordless sudo command
-
+https://www.tecmint.com/run-sudo-command-without-password-linux/
 Type below command
 
 sudo visudo
