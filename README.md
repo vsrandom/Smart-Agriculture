@@ -2,9 +2,10 @@
 
 Major Technical Project - Developing an IOT based system for Health Prediction and Disease Classification of Crops using Machine Learning
 
-## Automated Data Collection From Salgi and Neri Field via SSH
+## Automated Data Collection From Salgi and Neri Field via SSH following Multi Level Master Slave Architecture
 ![Neri Field](https://github.com/vsrandom/Smart-Agriculture/blob/master/neri_field.PNG) <br />
-![Salgi Field](https://github.com/vsrandom/Smart-Agriculture/blob/master/salgi_field.PNG)
+![Salgi Field](https://github.com/vsrandom/Smart-Agriculture/blob/master/salgi_field.PNG) <br />
+![Salgi Field](https://github.com/vsrandom/Smart-Agriculture/blob/master/architecture.png)
 
 * Setting up Password less SSH between slaves and local master & local master and main master <br />
 https://www.tecmint.com/ssh-passwordless-login-using-ssh-keygen-in-5-easy-steps/ <br /> 
