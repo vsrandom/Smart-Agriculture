@@ -6,5 +6,5 @@
 
 cd /
 cd home/pi
-python codex.py
+python main_code_slave.py
 cd /home/pi

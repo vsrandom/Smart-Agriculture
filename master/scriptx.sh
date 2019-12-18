@@ -1,3 +1,3 @@
 cd home/pi
-python codex.py
+python main_code.py
 cd /home/pi

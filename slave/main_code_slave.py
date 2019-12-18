@@ -10,11 +10,10 @@ print(datetime.now())
 print('Codex code has started...')
 
 def loopfun():
-	subprocess.Popen("{cmd}".format(cmd="python /home/pi/code1.py"), shell=True, stdout=subprocess.PIPE).communicate()
+	subprocess.Popen("{cmd}".format(cmd="python /home/pi/code_functions_slave.py"), shell=True, stdout=subprocess.PIPE).communicate()
 
 
-while True:
-	loopfun()
-	time.sleep(params['Image_Capture_Interval'])
+loopfun()
+
 
 
