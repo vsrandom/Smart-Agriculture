@@ -20,5 +20,6 @@
 	"shutdown_slave_1": false,
 	"sensor_data_local":"/home/pi/master_/master/sdata/",
 	"sensor_data_destinantion":"/home/pi/main_master/master_/master/sdata/",
-	"Image_waiting_Interval":300
+	"Image_Waiting_Interval": 300,
+	"rest_sensor_saving_directory": "/home/pi/master_/master/sdata/"
 }

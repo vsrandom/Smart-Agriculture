@@ -8,6 +8,8 @@ import datetime
 import time
 ###############
 import smbus
+import json
+params = json.loads(open('/home/pi/configuration.json').read())
 #######gy30####
 # Define some constants from the datasheet
 DEVICE     = 0x23 # Default device I2C address
@@ -203,7 +205,7 @@ bme_temp,bme_pre,bme_hum = bme280test()
 ########DS18B20############
 temp_c = read_temp()
 ######save######
-file1 = open("/home/pi/master/sdata/sdata.txt","a")
+file1 = open(params['rest_sensor_saving_directory']+"sdata.txt","a")
 #L = ["This is Delhi \n","This is Paris \n","This is Thrissur \n"]
 dt_date = datetime.datetime.now().strftime('%Y-%m-%d-%H-%M-%S')
 #print(dt_date)

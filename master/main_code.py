@@ -88,7 +88,7 @@ while  True:
     if res > thr:
         camerafun()
         GPIO.output(8, GPIO.LOW) # Turn on relay for powering slave rpi
-        time.sleep(params['Image_waiting_interval'])
+        time.sleep(params['Image_Waiting_Interval'])
         GPIO.output(8, GPIO.HIGH) # Turn off relay
         time.sleep(60)
         checkfiles(path1,path2,path3)
