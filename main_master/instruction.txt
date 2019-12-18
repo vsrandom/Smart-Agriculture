@@ -1,0 +1,45 @@
+Open crontab -e
+
+and write below command
+
+@reboot(sleep 90; python /home/pi/codex.py)
+
+sudo mount /dev/sda1 /mnt/sda1/
+For unmount usb
+
+sudo umount /dev/sda1
+
+For passwordless sudo command
+https://www.tecmint.com/run-sudo-command-without-password-linux/
+Type below command
+
+sudo visudo
+
+and write 
+
+pi ALL=(ALL) NOPASSWD: ALL
+
+
+For first time plug usb
+
+for find usblocation
+
+type below command
+
+df -h
+
+
+create directory 
+sudo mkdir /mnt/sda1
+
+mount usb to /mnt/sda1
+
+sudo mount -o rw /dev/sda1 /mnt/sda1/
+
+for creaing first time folder in usb
+
+sudo cp -r main_master /mnt/sda1/
+
+above command will create main_master folder in usb and copy all content of main_master in sub
+
+if you remove usb from raspberry pi and plug again then you need to reboot raspberry pi
