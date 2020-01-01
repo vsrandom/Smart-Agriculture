@@ -19,7 +19,7 @@ def fun():
 def checkfiles(path,file):
     sourcepath = params['source'] + path
     destinationpath = params['destination'] + path
-    if len(os.listdir(sourcepath)) > 0:
+    if os.path.exists(sourcepath) and len(os.listdir(sourcepath)) > 0:
         print(datetime.now())
 	print(sourcepath)
         print('Files found')
